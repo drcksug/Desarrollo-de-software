@@ -1,0 +1,24 @@
+/#include<stdio.h>
+
+int main() {
+	int i;
+	int n;
+	int r;
+	printf("Bienvenido al sistema para determinar nuemros primos\n");
+	printf("Ingrese el numero a determinar si es primo o no\n");
+	scanf("%d", &n);
+	i = 1;
+	r = 0;
+	while (i<=n) {
+		if ((n%i==0)) {
+			r = r+1;
+		}
+		i = i+1;
+	}
+	if ((r==2)) {
+		printf("El numero: %d es primo\n", n);
+	} else {
+		printf("El numero: %d no es primo\n", n);
+	}
+	return 0;
+}
